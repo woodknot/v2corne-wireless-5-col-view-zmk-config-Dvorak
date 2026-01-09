@@ -130,7 +130,7 @@
             layers = <0>;
         };
 
-        BracketCombo {
+        SqrBracketCombo {
             bindings = <&kp LBKT &kp RBKT>;
             key-positions = <23 26>;
             layers = <0>;
