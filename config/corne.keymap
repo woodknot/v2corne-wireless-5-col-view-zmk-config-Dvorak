@@ -61,7 +61,54 @@
             key-positions = <29 28>;
             layers = <0>;
         };
-    };
+
+        grave_tilde {
+            bindings = <&kp GRAVE>;
+            key-positions = <0 10>;
+            layers = <0>;
+        };
+
+        backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <8 9>;
+            layers = <0 1 2>;
+        };
+
+        question {
+            bindings = <&kp QMARK>;
+            key-positions = <1 2>;
+        };
+
+        Del {
+            bindings = <&kp DEL>;
+            key-positions = <8 7>;
+        };
+
+        LBracket {
+            bindings = <&kp LPAR>;
+            key-positions = <3 4>;
+            layers = <0 2>;
+        };
+
+        RBracket {
+            bindings = <&kp RPAR>;
+            key-positions = <5 6>;
+            layers = <0 2>;
+        };
+
+        LBrace {
+            bindings = <&kp LBRC>;
+            key-positions = <13 14>;
+            layers = <0>;
+        };
+
+        RBrace {
+            bindings = <&kp RBRC>;
+            key-positions = <15 16>;
+            layers = <0>;
+        };
+
+    }; // end combos
 
     };
         keymap {
