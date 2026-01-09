@@ -13,9 +13,9 @@
 
 / {
     chosen {
-        //zmk,physical-layout = &foostan_corne_5col_layout; // from the new version from tyeractive, tho seems to be for corne v4?
+        zmk,physical-layout = &foostan_corne_5col_layout; // from the new version from tyeractive, tho seems to be for corne v4?
         //zmk,matrix_transform = &corne_v2_5col_transform;
-        zmk,matrix_transform = &five_column_transform; // old style, doesn't compile anymore
+        //zmk,matrix_transform = &five_column_transform; // old style, doesn't compile anymore
     };
 
     behaviors {
