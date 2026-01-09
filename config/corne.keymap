@@ -208,6 +208,24 @@
             layers = <0>;
         };
 
+        volDown {
+            bindings = <&kp C_VOL_DN>;
+            key-positions = <35 27>;
+            layers = <0>;
+        };
+
+        volUp {
+            bindings = <&kp C_VOL_UP>;
+            key-positions = <35 28>;
+            layers = <0>;
+        };
+
+        volMute {
+            bindings = <&kp C_MUTE>;
+            key-positions = <35 29>;
+            layers = <0>;
+        };
+
     }; // end combos
 
     keymap {
