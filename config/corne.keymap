@@ -94,13 +94,13 @@
             key-positions = <8 7>;
         };
 
-        LBracket {
+        LParen {
             bindings = <&kp LPAR>;
             key-positions = <3 4>;
             layers = <0 2>;
         };
 
-        RBracket {
+        RParen {
             bindings = <&kp RPAR>;
             key-positions = <5 6>;
             layers = <0 2>;
@@ -115,24 +115,6 @@
         RBrace {
             bindings = <&kp RBRC>;
             key-positions = <15 16>;
-            layers = <0>;
-        };
-
-        BracketCombo {
-            bindings = <&kp LPAR &kp RPAR>;
-            key-positions = <3 6>;
-            layers = <0 2>;
-        };
-
-        BraceCombo {
-            bindings = <&kp LBRC &kp RBRC>;
-            key-positions = <13 16>;
-            layers = <0>;
-        };
-
-        SqrBracketCombo {
-            bindings = <&kp LBKT &kp RBKT>;
-            key-positions = <23 26>;
             layers = <0>;
         };
 
