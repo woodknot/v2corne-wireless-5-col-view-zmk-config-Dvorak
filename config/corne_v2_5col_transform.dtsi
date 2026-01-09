@@ -1,0 +1,29 @@
+/ {
+    corne_v2_5col_transform: corne_v2_5col_transform {
+        compatible = "zmk,matrix-transform";
+
+        /* Corne v2: 3 main rows + thumb row */
+        rows = <4>;
+
+        /* 5 columns per half = 10 logical columns */
+        columns = <10>;
+
+        /*
+         * Logical-to-physical mapping.
+         * Matches standard Corne v2 wiring (choc or MX).
+         */
+        map = <
+            /* Row 0 */
+            0   1   2   3   4    5   6   7   8   9
+
+            /* Row 1 */
+            10  11  12  13  14   15  16  17  18  19
+
+            /* Row 2 */
+            20  21  22  23  24   25  26  27  28  29
+
+            /* Thumb row (3 per side) */
+                 31  32  33        36  37  38
+        >;
+    };
+};
