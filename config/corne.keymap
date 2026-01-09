@@ -275,6 +275,21 @@
                 &kp COMMA  &kp DOT    &kp EQUAL         &none           &kp ESC   &kp ENTER
             >;
         };
+
+        bt_nav_music {
+            // -----------------------------------------------------------------------------------------
+            // | !     |  @  |  #  |  $  |  %  |     |  ^  |  &  |  *  |  (  |  )  |
+            // | BT1   | BT2 | BT3 | BT4 | BT5 |     | LFT | DWN |  UP | RGT |     |
+            // | BTCLR |     |     |     |     |     |     |     |     |     |     |
+            //               | GUI |     | SPC |     | ENT | ESC | TAB |
+            display-name = "BT_Nav";
+            bindings = <
+                &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3      &bt BT_SEL 4    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+                &kp LCTRL     &kp LSHFT     &kp LALT      &kp LWIN          &kp F11         &kp LA(F4)    &kp F5        &kp HOME      &kp UP        &kp END
+                &kp LCTRL     &kp LSHFT     &kp LALT      &kp LWIN          &kp F12         &kp C_VOL_DN  &kp C_VOL_UP  &kp LEFT      &kp DOWN      &kp RIGHT
+                &kp C_PREV    &kp C_PLAY_PAUSE  &kp C_NEXT      &bt BT_CLR    &kp C_MUTE    &none
+            >;
+        };
     
         firmware {
             // -----------------------------------------------------------------------------------------
@@ -291,4 +306,5 @@
             >;
         };
     }; //end keymap
+
 }; // end root
