@@ -19,6 +19,7 @@
     };
 
     behaviors {
+/*
         as: auto_shift {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -27,6 +28,7 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+*/
     };
         keymap {
                 compatible = "zmk,keymap";
