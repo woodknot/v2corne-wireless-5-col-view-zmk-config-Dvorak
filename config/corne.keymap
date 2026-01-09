@@ -118,6 +118,24 @@
             layers = <0>;
         };
 
+        BracketCombo {
+            bindings = <&kp LPAR &kp RPAR>;
+            key-positions = <3 6>;
+            layers = <0 2>;
+        };
+
+        BraceCombo {
+            bindings = <&kp LBRC &kp RBRC>;
+            key-positions = <13 16>;
+            layers = <0>;
+        };
+
+        BracketCombo {
+            bindings = <&kp LBKT &kp RBKT>;
+            key-positions = <23 26>;
+            layers = <0>;
+        };
+
         app_calc {
             bindings = <&kp C_AL_CALC>;
             key-positions = <24 14>;
