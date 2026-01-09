@@ -7,15 +7,15 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-//#include "corne_v2_5col_transform.dtsi"
+#include <corne_v2_5col_transform.dtsi> //#include "corne_v2_5col_transform.dtsi"
 
 //#define AS(keycode) &as LS(keycode) keycode
 
 / {
     chosen {
-        //zmk,physical-layout = &foostan_corne_5col_layout;
-        //zmk,matrix_transform = &corne_v2_5col_transform;
-        zmk,matrix_transform = &five_column_transform;
+        //zmk,physical-layout = &foostan_corne_5col_layout; // from the new version from tyeractive, tho seems to be for corne v4?
+        zmk,matrix_transform = &corne_v2_5col_transform;
+        //zmk,matrix_transform = &five_column_transform; // old style, doesn't compile anymore
     };
 
     behaviors {
