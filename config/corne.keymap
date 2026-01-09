@@ -30,6 +30,15 @@
     //    };
     }; // end behaviors
 
+
+/*               36 KEY MATRIX
+  ╭────────────────────┬────────────────────╮
+  │  0   1   2   3   4 │  5   6   7   8   9 │
+  │ 10  11  12  13  14 │ 15  16  17  18  19 │
+  │ 20  21  22  23  24 │ 25  26  27  28  29 │
+  ╰───────╮ 30  31  32 │ 33  34  35 ╭───────╯
+          ╰────────────┴────────────╯         */
+
     combos {
         compatible = "zmk,combos";
 
@@ -106,6 +115,96 @@
         RBrace {
             bindings = <&kp RBRC>;
             key-positions = <15 16>;
+            layers = <0>;
+        };
+
+        app_calc {
+            bindings = <&kp C_AL_CALC>;
+            key-positions = <24 14>;
+            layers = <0 2>;
+        };
+
+        caps {
+            bindings = <&kp CAPS>;
+            key-positions = <10 11>;
+            layers = <0>;
+        };
+
+        ThumbShift1 {
+            bindings = <&kp EXCLAMATION>;
+            key-positions = <10 33>;
+            layers = <0>;
+        };
+
+        ThumbShift2 {
+            bindings = <&kp AT_SIGN>;
+            key-positions = <11 33>;
+            layers = <0>;
+        };
+
+        ThumbShift3 {
+            bindings = <&kp HASH>;
+            key-positions = <12 33>;
+            layers = <0>;
+        };
+
+        ThumbShift4 {
+            bindings = <&kp DOLLAR>;
+            key-positions = <33 13>;
+            layers = <0>;
+        };
+
+        ThumbShift5 {
+            bindings = <&kp PERCENT>;
+            key-positions = <33 14>;
+            layers = <0>;
+        };
+
+        ThumbShift6 {
+            bindings = <&kp CARET>;
+            key-positions = <15 32>;
+            layers = <0>;
+        };
+
+        ThumbShift7 {
+            bindings = <&kp AMPERSAND>;
+            key-positions = <16 32>;
+            layers = <0>;
+        };
+
+        ThumbShift8 {
+            bindings = <&kp ASTERISK>;
+            key-positions = <17 32>;
+            layers = <0>;
+        };
+
+        ThumbShift9 {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <18 32>;
+            layers = <0>;
+        };
+
+        ThumbShift0 {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <19 32>;
+            layers = <0>;
+        };
+
+        PrtScn {
+            bindings = <&kp PSCRN>;
+            key-positions = <2 3>;
+            layers = <0>;
+        };
+
+        homeCombo {
+            bindings = <&kp HOME>;
+            key-positions = <8 18>;
+            layers = <0>;
+        };
+
+        endCombo {
+            bindings = <&kp END>;
+            key-positions = <9 19>;
             layers = <0>;
         };
 
