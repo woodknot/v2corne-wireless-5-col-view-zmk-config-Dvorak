@@ -20,14 +20,60 @@
 
     behaviors {
 
-    //    as: auto_shift {
-    //        compatible = "zmk,behavior-hold-tap";
-    //        #binding-cells = <2>;
-    //        tapping_term_ms = <200>;
-    //        quick_tap_ms = <0>;
-    //        flavor = "tap-preferred";
-    //        bindings = <&kp>, <&kp>;
-    //    };
+        HRMShiftR: HRMShiftR {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HRMSHIFTR";
+            bindings = <&kp>, <&kp>;
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            hold-while-undecided;
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32>;
+        };
+    
+        HRMOtherR: HRMOtherR {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HRMOTHERR";
+            bindings = <&kp>, <&kp>;
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            hold-while-undecided;
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32>;
+            flavor = "tap-preferred";
+        };
+    
+        HRMShiftL: HRMShiftL {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HRMSHIFTL";
+            bindings = <&kp>, <&kp>;
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            hold-while-undecided;
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 33 34 35>;
+        };
+    
+        HRMOtherL: HRMOtherL {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HRMOTHERL";
+            bindings = <&kp>, <&kp>;
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            hold-while-undecided;
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 33 34 35>;
+            flavor = "tap-preferred";
+        };
+    
+        //    as: auto_shift {
+        //        compatible = "zmk,behavior-hold-tap";
+        //        #binding-cells = <2>;
+        //        tapping_term_ms = <200>;
+        //        quick_tap_ms = <0>;
+        //        flavor = "tap-preferred";
+        //        bindings = <&kp>, <&kp>;
+        //    };
     }; // end behaviors
 
 
