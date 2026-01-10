@@ -20,6 +20,11 @@
 
     behaviors {
 
+        &mt {
+        	tapping-term-ms = <280>; // how long the key needs to be held until the hold behavior takes effect instead of the tap
+        	quick-tap-ms = <150>; // how quickly to tap a key then hold the same key to enable it to repeat the key
+        };
+
         HRMShiftR: HRMShiftR {
             compatible = "zmk,behavior-hold-tap";
             label = "HRMSHIFTR";
