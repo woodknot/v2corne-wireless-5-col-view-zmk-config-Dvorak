@@ -20,6 +20,16 @@
 
     behaviors {
 
+        space_shift: space_shift {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <200>;
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19>;
+            bindings = <&kp>, <&kp>;
+        };
+
         // used for holding shift with combo
         temp_shift_left: temp_shift_left {
             compatible = "zmk,behavior-macro";
@@ -282,7 +292,7 @@
                 &mt LALT SQT         &kp COMMA  &kp DOT       &kp P           &kp Y              &kp F        &kp G             &kp C        &kp R  &kp L
                 &kp A                &kp O      &kp E         &kp U           &kp I              &kp D        &kp H             &kp T        &kp N  &kp S
                 &mt LCTRL SEMICOLON  &mt LSHIFT Q      &kp J         &kp K           &kp X              &kp B        &kp M             &kp W        &mt RSHIFT V  &mt RCTRL Z
-                &mt LWIN TAB  &mt LSHIFT DEL  &lt 1 BACKSPACE    &lt 2 MINUS  &kp SPACE  &lt 3 ENTER //&mt RSHIFT SPACE
+                &mt LWIN TAB  &mt LSHIFT DEL  &lt 1 BACKSPACE    &lt 2 MINUS  &space_shift LSHFT SPACE  &lt 3 ENTER //&mt RSHIFT SPACE //&kp SPACE
             >;
         };
     
