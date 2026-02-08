@@ -20,6 +20,24 @@
 
     behaviors {
 
+        temp_shift_left: temp_shift_left {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LSHFT>
+                , <&macro_pause_for_release>
+                , <&macro_release &kp LSHFT>;
+        };
+        
+        temp_shift_right: temp_shift_right {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp RSHFT>
+                , <&macro_pause_for_release>
+                , <&macro_release &kp RSHFT>;
+        };
+
     //    as: auto_shift {
     //        compatible = "zmk,behavior-hold-tap";
     //        #binding-cells = <2>;
@@ -41,6 +59,26 @@
 
     combos {
         compatible = "zmk,combos";
+
+        //ShiftedEUforRH {
+        //    bindings = <&sk LSHIFT>;
+        //    key-positions = <12 13>;
+        //    layers = <0>;
+        //}
+
+        // Left-side temporary shift (e+u)
+        combo_left_temp_shift {
+            timeout-ms = <50>;
+            key-positions = <12 13>;  // Adjust to your e and u positions
+            bindings = <&temp_shift_left>;
+        };
+        
+        // Right-side temporary shift (h+t)
+        combo_right_temp_shift {
+            timeout-ms = <50>;
+            key-positions = <16 17>;  // Adjust to your h and t positions
+            bindings = <&temp_shift_right>;
+        };
 
         cut {
             bindings = <&kp LC(X)>;
